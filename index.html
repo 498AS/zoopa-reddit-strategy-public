@@ -186,6 +186,72 @@
   <div class="section">
     <div class="section-header">
       <div class="section-number">8</div>
+      <div class="section-title">Capa 4 — Reddit Ads ("Promoted") como acelerador GEO</div>
+    </div>
+    <p>Inspirado en el benchmarking de <strong>peec.ai</strong> (competidor directo de GEOradar en medición de visibilidad LLM), que está usando activamente Promoted Posts y Conversation Ads en subs de marketing/SEO/AI. Lo hacen porque funciona para <strong>dos</strong> objetivos a la vez:</p>
+    <ol>
+      <li>Top-funnel marketing tradicional (clicks, leads).</li>
+      <li><strong>Inyección de contenido en el corpus que los LLMs ingieren.</strong> Reddit indexa los posts promocionados igual que los orgánicos — Google y OpenAI los reciben en el feed de licencia.</li>
+    </ol>
+
+    <div class="solution-box">Reddit Ads cierra el bucle: disclosure resuelto por el badge "Promoted" (sin riesgo de astroturfing), targeting exacto por subreddit, escala lo que el orgánico tarda meses en construir, y entry-cost bajo (€5/día) para testing.</div>
+
+    <h3>Formatos disponibles y su valor para GEO</h3>
+    <table>
+      <tr><th>Formato</th><th>Qué es</th><th>Valor GEO</th><th>Recomendación</th></tr>
+      <tr><td><strong>Promoted Post (free-form)</strong></td><td>Post text/imagen/video en feed con badge "Promoted"</td><td>Alto si es text-heavy</td><td><strong>Pilar.</strong> Copy largo (300-500 palabras), tono editorial</td></tr>
+      <tr><td><strong>Conversation Placement Ad</strong></td><td>Ad entre comentarios de un hilo activo</td><td>Alto — LLMs leen contexto del hilo</td><td>Hilos populares de tema relevante. Tono pregunta/aporte</td></tr>
+      <tr><td>Free-form Ad multi-format</td><td>Texto + imagen + video + GIF</td><td>Medio-alto si peso en texto</td><td>Case studies con captura visual + análisis</td></tr>
+      <tr><td>Display Ad sidebar/feed</td><td>Banner imagen</td><td>Bajo — LLMs no ingieren texto en imágenes</td><td>Saltar para GEO</td></tr>
+      <tr><td>Video Ad autoplay</td><td>Video con autoplay</td><td>Bajo — LLMs no ingieren video</td><td>Saltar (salvo publicar transcripción aparte)</td></tr>
+    </table>
+
+    <h3>Cómo Zoopa debe usarlo</h3>
+    <p><strong>Para Zoopa propia (mes 2-3, una vez la Capa 1 está en marcha):</strong></p>
+    <ul>
+      <li>1-2 Promoted Posts/mes en r/marketing + r/agency con case studies anonimizados.</li>
+      <li>Copy largo (no creatividad pulida — Reddit huele las "agency ads" a kilómetros).</li>
+      <li>Comentarios habilitados, equipo Capa 1 responde con su voz personal (sin coordinar votos).</li>
+      <li>Budget piloto: <strong>€300-500/mes</strong> durante 90 días para tener datos de CAC y citation lift.</li>
+    </ul>
+    <p><strong>Para clientes (servicio GEO-Reddit Capa 2, ahora con dos modalidades):</strong></p>
+    <ul>
+      <li><strong>Modalidad A — solo orgánico:</strong> activación de empleados/embajadores. Más barato, más lento, mayor profundidad.</li>
+      <li><strong>Modalidad B — orgánico + Promoted:</strong> combina activación con buy-out de inventario en subs target. Más caro, más rápido, mayor cobertura. <strong>Esta es la oferta diferencial.</strong></li>
+    </ul>
+
+    <h3>Best practices Promoted (validadas por benchmarks 2026)</h3>
+    <ol>
+      <li><strong>Estudia el sub durante 1 semana</strong> antes de escribir copy. Tu ad debe igualar vocabulario, longitud de frase y densidad informativa del top orgánico.</li>
+      <li><strong>Texto &gt; imagen &gt; video</strong> para GEO. Diseño pulido = signal "advertisement" → downvotes + menos peso LLM.</li>
+      <li><strong>Una creatividad por cluster de subs.</strong> Genérico cross-sub baja CTR y sube CPC.</li>
+      <li><strong>Habilita comentarios siempre.</strong> La conversación generada multiplica el contenido text-rich que los LLMs ingieren.</li>
+      <li><strong>Disclosure transparente</strong> ("Disclosure: I work at Zoopa, the agency that did this"), incluso con el badge Promoted.</li>
+      <li>Video vertical <strong>4:5</strong> si usas video.</li>
+      <li><strong>Targeting por subreddit primero</strong> (3-5 comunidades), no interest-based. Excluye NSFW y comunidades &lt;5k miembros.</li>
+      <li><strong>Mide citation lift en GEOradar</strong> — la métrica de éxito GEO no es CTR del ad sino aumento de citas Reddit en respuestas LLM antes/después del periodo Promoted.</li>
+    </ol>
+
+    <h3>Aprendizaje de peec.ai aplicable</h3>
+    <ul>
+      <li><strong>Su táctica visible:</strong> Promoted Posts + Conversation Ads en r/SEO, r/marketing, r/digital_marketing, r/PPC.</li>
+      <li><strong>Su blog público no documenta la estrategia Reddit</strong> — la ejecutan pero no la "venden". Inferencia: lo consideran ventaja competitiva.</li>
+      <li><strong>Implicación para Zoopa:</strong> convertir esto en oferta explícita para clientes ("activación + Reddit Ads + medición GEOradar") aprovecha que el competidor lo guarda interno.</li>
+      <li><strong>Riesgo:</strong> si peec.ai (u otro) lanza un servicio similar antes, perdemos el ángulo. Ventana estimada: 6-12 meses.</li>
+    </ul>
+
+    <h3>KPIs específicos de Capa 4</h3>
+    <ul>
+      <li>CPC y CTR por subreddit/creatividad (operativo).</li>
+      <li>Comentarios generados por ad (proxy de profundidad de conversación → corpus LLM).</li>
+      <li>Upvote ratio del Promoted Post (si baja de 0.6, parar y reescribir).</li>
+      <li><strong>Citation lift en GEOradar</strong> (mes a mes, comparando con baseline pre-campaña). <strong>KPI principal.</strong></li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">9</div>
       <div class="section-title">Subs objetivo</div>
     </div>
     <ul>
