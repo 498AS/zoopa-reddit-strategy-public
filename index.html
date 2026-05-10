@@ -252,6 +252,80 @@
   <div class="section">
     <div class="section-header">
       <div class="section-number">9</div>
+      <div class="section-title">Capa 5 — Quora como canal complementario GEO</div>
+    </div>
+    <div class="insight-box">Reddit es comunidad lateral con vida útil corta. Quora es búsqueda con vida útil de 5-10 años por respuesta. Combinarlos cubre el mapa completo: Reddit aporta señales sociales y conversación reciente; Quora aporta autoridad pasiva descubrible que los LLMs siguen citando años después.</div>
+
+    <h3>Por qué añadir Quora</h3>
+    <ul>
+      <li><strong>Está en el corpus de entrenamiento</strong> de ChatGPT, Gemini y Claude — aparece citada en queries informativas.</li>
+      <li><strong>Sigue rankeando en Google</strong> (autoridad de dominio alta) → tráfico orgánico web compuesto.</li>
+      <li><strong>Long-tail extremo:</strong> una buena respuesta es un activo de 5-10 años.</li>
+      <li><strong>Pull (búsqueda) vs push (Substack/LinkedIn):</strong> cubre el hueco "que te encuentren cuando buscan".</li>
+    </ul>
+
+    <div class="problem-box">Quora está en declive (menos engagement, más spam, Quora+ paywall). Quora ES tiene tráfico residual; el ecosistema fuerte está en EN. No fideliza audiencia (eso es Substack) — sirve para descubrimiento.</div>
+
+    <h3>Estrategia para Zoopa y equipo</h3>
+    <ul>
+      <li><strong>Quién:</strong> mismo equipo de Capa 1 (perfiles reales). Los perfiles existentes con cuenta dormida son activos a reactivar.</li>
+      <li><strong>Cadencia:</strong> 1-2 respuestas/semana por persona, integrado como output automático en content-factory (cada source.md genera 2-3 borradores Quora).</li>
+      <li><strong>Idioma:</strong> 70% EN (audiencia técnica + LLMs prefieren EN), 30% ES (queries nicho local baja competencia), 0% CA.</li>
+    </ul>
+
+    <h3>Requisitos de cuenta</h3>
+    <ul>
+      <li>Antigüedad mínima 30 días antes de postear con links.</li>
+      <li>Bio completa: nombre real, cargo, empresas, link al sitio. Foto consistente con LinkedIn.</li>
+      <li>Credentials específicas por topic (ej. "CEO at Zoopa" para Marketing, "GEO researcher · georadar.app" para AI).</li>
+      <li>Mínimo 5 topics seguidos relevantes.</li>
+    </ul>
+
+    <h3>Formato de respuesta óptimo</h3>
+    <table>
+      <tr><th>Elemento</th><th>Recomendación</th></tr>
+      <tr><td>Longitud</td><td>600-1.200 palabras (&lt;300 casi nunca rankea)</td></tr>
+      <tr><td>Estructura</td><td>Frase 1 = respuesta directa snippet-friendly · Párrafo 2 = contexto · Cuerpo = datos/ejemplos · Cierre = síntesis</td></tr>
+      <tr><td>Imágenes</td><td>Mínimo 1 (diagrama, captura, gráfico) — sube CTR ~30%</td></tr>
+      <tr><td>Enlaces salientes</td><td>Máximo 1-2, solo si aportan</td></tr>
+      <tr><td>Bullets</td><td>Sí, intercalados con prosa (todo-bullets penaliza)</td></tr>
+    </table>
+
+    <h3>Cómo elegir preguntas</h3>
+    <ol>
+      <li><strong>Search volume + respuestas mediocres = oportunidad.</strong> Buscar <code>[query] site:quora.com</code> en Google + Ahrefs/SEMrush para volumen.</li>
+      <li><strong>Preguntas con &lt;5 respuestas y &gt;1.000 vistas =</strong> sweet spot.</li>
+      <li><strong>Evitar:</strong> preguntas evergreen saturadas y queries hiperespecíficas con 0 búsqueda.</li>
+    </ol>
+
+    <h3>Anti-patrones (penalizan o bannean)</h3>
+    <ul>
+      <li>Misma respuesta copiada en varias preguntas similares.</li>
+      <li>Auto-promo descarada sin disclosure.</li>
+      <li>Más de 2 enlaces salientes por respuesta.</li>
+      <li>Comentarios genéricos en respuestas de otros para inflar perfil.</li>
+    </ul>
+
+    <h3>Proyección realista de ROI a 12 meses</h3>
+    <p>Con 1-2 respuestas/semana del equipo (≈70 respuestas/año):</p>
+    <ul>
+      <li><strong>Optimista:</strong> 2-3 respuestas pegan → 100-300K visitas/año acumuladas + citas LLM medibles.</li>
+      <li><strong>Realista:</strong> 50K visitas/año, 5-10 leads cualificados/año, presencia constante en respuestas ChatGPT sobre GEO.</li>
+      <li><strong>Pesimista:</strong> 10-15K visitas/año, 0 leads directos pero 1-2 menciones LLM/mes.</li>
+    </ul>
+
+    <h3>KPIs específicos Capa 5</h3>
+    <ul>
+      <li>Vistas/respuesta y vistas totales del perfil.</li>
+      <li>Upvotes y comentarios por respuesta.</li>
+      <li><strong>Citation lift Quora en GEOradar</strong> (mes a mes). <strong>KPI principal.</strong></li>
+    </ul>
+    <div class="solution-box">Integración en content-factory: Quora añadido como output automático (<code>quora_ready.txt</code>). Detalle completo de formato y reglas en la skill content-factory.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-header">
+      <div class="section-number">10</div>
       <div class="section-title">Subs objetivo</div>
     </div>
     <ul>
